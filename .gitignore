@@ -1,0 +1,15 @@
+# Terraform sensitive files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive configuration - DO NOT COMMIT
+terraform.tfvars
+*.auto.tfvars
+override.tf
+override.tf.json
+
+# Local files
+.DS_Store

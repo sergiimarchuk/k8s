@@ -1,0 +1,26 @@
+# Copy this file to terraform.tfvars and fill in your actual values
+# DO NOT commit terraform.tfvars to Git!
+
+proxmox_api_url  = "https://YOUR_PROXMOX_IP:8006"
+proxmox_user     = "terraform@pve"
+proxmox_password = "YOUR_PASSWORD_HERE"
+proxmox_node     = "YOUR_NODE_NAME"
+
+template_id = 9000
+
+storage        = "local-lvm"
+network_bridge = "vmbr0"
+
+vm_name_prefix = "k8s"
+
+control_plane_count     = 1
+control_plane_cores     = 2
+control_plane_memory    = 4096
+control_plane_disk_size = "32"
+
+worker_count     = 2
+worker_cores     = 2
+worker_memory    = 4096
+worker_disk_size = "32"
+
+ssh_keys = ""
