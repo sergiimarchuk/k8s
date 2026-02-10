@@ -15,5 +15,5 @@ override.tf.json
 .DS_Store
 
 #images
-*.cow2
+*.qcow2
 *.img
