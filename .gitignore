@@ -13,3 +13,7 @@ override.tf.json
 
 # Local files
 .DS_Store
+
+#images
+*.cow2
+*.img
